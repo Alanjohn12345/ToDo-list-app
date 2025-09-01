@@ -1,0 +1,82 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-image: url(bg_img.jpg);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  background: rgba(83, 129, 255, 0.281);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #9b9b9b;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input, .input-section button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  background: #667eea;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background: #764ba2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+li span {
+  flex: 1;
+  text-align: left;
+}
+
+li .status {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+label{
+  color: #ffffff;
+}
+.status.Pending { color: orange; }
+.status.Ongoing { color: green; }
+.status.Completed { color: gray; text-decoration: line-through; }
